@@ -23,7 +23,7 @@ export default function ScrollContainer() {
     };
   }, []);
   const scaleDimensions = () => {
-    return isMobile ? [0.7, 0.9] : [1.05, 1];
+    return isMobile ? [0.7, 0.8] : [1.05, 1];
   };
   const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
