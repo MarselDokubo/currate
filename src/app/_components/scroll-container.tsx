@@ -77,7 +77,7 @@ export function HeroImage({
 }) {
   return (
     <motion.div
-      className="md:max-w-5xl mx-auto w-[30rem] md:w-full rounded-[30px] shadow-2xl h-[40rem] -mt-28"
+      className="md:max-w-5xl mx-auto w-[30rem] md:w-full rounded-[30px] shadow-2xl h-[40rem] -mt-28 md:mt-0"
       style={{
         rotateX: rotate,
         scale,
