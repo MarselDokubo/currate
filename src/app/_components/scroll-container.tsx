@@ -48,11 +48,11 @@ export default function ScrollContainer() {
 
 export function HeroText() {
   return (
-    <motion.div className="flex flex-col">
+    <motion.div className="flex flex-col max-w-sm md:max-w-max mx-auto">
       <div className="flex items-center flex-col">
         <Button
           size={"lg"}
-          className="p-8 mb-8 md:mb-0 text-2xl w-full sm:w-fit border-t-2 rounded-full border-[#4D4D4D] bg-[#1F1F1F] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500"
+          className="py-8 px-6 mb-8 md:mb-0 text-2xl mx-auto sm:w-fit border-t-2 rounded-full border-[#4D4D4D] bg-[#1F1F1F] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500"
         >
           <SignInButton>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black">
@@ -60,7 +60,7 @@ export function HeroText() {
             </span>
           </SignInButton>
         </Button>
-        <h1 className="text-5xl md:text-8xl bg-clip-text tracking-tighter text-center text-transparent bg-gradient-to-b from-white to-neutral-600 font-semibold">
+        <h1 className="text-5xl md:text-8xl bg-clip-text tracking-tighter text-center text-transparent bg-gradient-to-b from-white to-neutral-600 font-semibold max-w-max">
           Automate with Currate
         </h1>
       </div>
@@ -77,7 +77,7 @@ export function HeroImage({
 }) {
   return (
     <motion.div
-      className="max-w-5xl mx-auto w-full rounded-[30px] shadow-2xl h-[30rem] md:h-[40rem] -mt-10"
+      className="md:max-w-5xl mx-auto w-[30rem] md:w-full rounded-[30px] shadow-2xl h-[40rem] -mt-10"
       style={{
         rotateX: rotate,
         scale,
