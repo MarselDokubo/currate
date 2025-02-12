@@ -30,7 +30,7 @@ export default function ScrollContainer() {
   //const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
   return (
     <div
-      className="flex items-center justify-center relative p-20 mt-20"
+      className="flex items-center justify-center relative md:p-20 mt-20"
       ref={containerRef}
     >
       <div
