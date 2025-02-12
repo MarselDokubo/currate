@@ -4,8 +4,8 @@ import { CardBody, CardContainer, CardItem } from "./card3d";
 
 export default function Pricing() {
   return (
-    <div className="py-20">
-      <h2 className="text-7xl font-semibold max-w-max mx-auto tracking-tighter pb-12">
+    <div className="py-20 container px-6">
+      <h2 className="text-5xl md:text-7xl font-semibold max-w-max mx-auto tracking-tighter pb-12">
         Our Pricing
       </h2>
       <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8">
