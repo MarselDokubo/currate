@@ -22,14 +22,16 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={`${font.className} antialiased`}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+          <div className="">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          </div>
         </body>
       </html>
     </ClerkProvider>

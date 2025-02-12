@@ -4,6 +4,7 @@ import { Button } from "~/components/ui/button";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { useScroll, useTransform } from "motion/react";
+import { SignInButton } from "@clerk/nextjs";
 import type { MotionValue } from "motion/react";
 export default function ScrollContainer() {
   const containerRef = useRef(null);
@@ -53,9 +54,11 @@ export function HeroText() {
           size={"lg"}
           className="p-8 mb-8 md:mb-0 text-2xl w-full sm:w-fit border-t-2 rounded-full border-[#4D4D4D] bg-[#1F1F1F] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500"
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black">
-            Start For Free Today
-          </span>
+          <SignInButton>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black">
+              Start For Free Today
+            </span>
+          </SignInButton>
         </Button>
         <h1 className="text-5xl md:text-8xl bg-clip-text tracking-tighter text-transparent bg-gradient-to-b from-white to-neutral-600 font-semibold">
           Automate with Currate

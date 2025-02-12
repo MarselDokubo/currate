@@ -1,6 +1,9 @@
 import LogoCarousel from "./_components/logo-carousel";
 import NavBar from "./_components/navbar";
 import ScrollContainer from "./_components/scroll-container";
+import { HeroParallax } from "./_components/hero-parallax";
+import { products } from "~/lib/constants";
+import Pricing from "./_components/pricing";
 
 export default function Home() {
   return (
@@ -11,6 +14,10 @@ export default function Home() {
         <ScrollContainer />
       </section>
       <LogoCarousel />
+      <section>
+        <HeroParallax products={products} />
+      </section>
+      <Pricing />
     </>
   );
 }
