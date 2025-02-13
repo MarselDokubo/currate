@@ -1,3 +1,5 @@
-export default function Dashboar() {
-  return "Dashboard"
+import { SignIn } from "@clerk/nextjs";
+
+export default function Page() {
+  return <SignIn />;
 }
