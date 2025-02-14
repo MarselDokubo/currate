@@ -17,7 +17,7 @@ type Props = {
   callback?: () => void;
 };
 
-const ConnectionCard = ({ description, type, icon, title }: Props) => {
+const ConnectionCard = ({ description, icon, title }: Props) => {
   return (
     <Card className="flex w-full items-center justify-between">
       <CardHeader className="flex flex-col gap-4">
