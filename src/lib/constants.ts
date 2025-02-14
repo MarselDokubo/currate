@@ -5,7 +5,7 @@ import Home from "~/components/icons/home";
 import Payment from "~/components/icons/payment";
 import Settings from "~/components/icons/settings";
 import Workflows from "~/components/icons/workflows";
-import { Connection } from "./types";
+import { Connection, ConnectionTypes } from "./types";
 
 export const clients = [...new Array(10)].map((client, index) => ({
   href: `/${index + 1}.png`,
@@ -135,8 +135,9 @@ export const CONNECTIONS: Connection[] = [
   },
 ];
 
-export const connectionLinks = {
+export const connectionLinks: Record<ConnectionTypes, string> = {
   Discord: process.env.NEXT_PUBLIC_DISCORD_REDIRECT!,
   Notion: process.env.NEXT_PUBLIC_NOTION_AUTH_URL!,
   Slack: process.env.NEXT_PUBLIC_SLACK_REDIRECT!,
+  "Google Drive": "",
 };
