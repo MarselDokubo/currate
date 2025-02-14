@@ -135,9 +135,17 @@ export const CONNECTIONS: Connection[] = [
   },
 ];
 
+//export const connectionLinks: Record<ConnectionTypes, string> = {
+//  Discord: process.env.NEXT_PUBLIC_DISCORD_REDIRECT!,
+//  Notion: process.env.NEXT_PUBLIC_NOTION_AUTH_URL!,
+//  Slack: process.env.NEXT_PUBLIC_SLACK_REDIRECT!,
+//  "Google Drive": "",
+//};
+//
+//
 export const connectionLinks: Record<ConnectionTypes, string> = {
-  Discord: process.env.NEXT_PUBLIC_DISCORD_REDIRECT!,
-  Notion: process.env.NEXT_PUBLIC_NOTION_AUTH_URL!,
-  Slack: process.env.NEXT_PUBLIC_SLACK_REDIRECT!,
+  Discord: "",
+  Notion: "",
+  Slack: "",
   "Google Drive": "",
 };
