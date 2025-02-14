@@ -1,5 +1,5 @@
-//import { CONNECTIONS } from "~/lib/constants";
-//import ConnectionCard from "./_components/connection-card";
+import { CONNECTIONS } from "~/lib/constants";
+import ConnectionCard from "./_components/connection-card";
 
 export default function Connections() {
   return (
@@ -11,6 +11,16 @@ export default function Connections() {
         <section className="flex flex-col gap-4 p-6 text-muted-foreground">
           Connect all your apps directly from here. You may need to connect
           these apps regularly to refresh verification
+          {CONNECTIONS.map((connection) => (
+            <ConnectionCard
+              key={connection.title}
+              description={connection.description}
+              title={connection.title}
+              icon={connection.image}
+              type={connection.title}
+              //connected={connections}
+            />
+          ))}
         </section>
       </div>
     </div>
