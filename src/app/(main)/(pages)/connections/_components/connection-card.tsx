@@ -8,6 +8,7 @@ import {
 } from "~/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import { connectionLinks } from "~/lib/constants";
 
 type Props = {
   type: ConnectionTypes;
@@ -42,7 +43,7 @@ const ConnectionCard = ({ description, icon, title }: Props) => {
           </div>
         ) : (
           <Link
-            href="#"
+            href={connectionLinks[title]}
             className=" rounded-lg bg-primary p-2 font-bold text-primary-foreground"
           >
             Connect
