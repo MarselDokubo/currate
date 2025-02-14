@@ -134,3 +134,9 @@ export const CONNECTIONS: Connection[] = [
     slackSpecial: true,
   },
 ];
+
+export const connectionLinks = {
+  Discord: process.env.NEXT_PUBLIC_DISCORD_REDIRECT!,
+  Notion: process.env.NEXT_PUBLIC_NOTION_AUTH_URL!,
+  Slack: process.env.NEXT_PUBLIC_SLACK_REDIRECT!,
+};
