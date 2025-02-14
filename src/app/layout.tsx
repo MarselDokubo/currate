@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "~/providers/theme-provider";
+import ModalProvider from "~/providers/modal-provider";
 
 const font = Inter({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              {children}
+              <ModalProvider>{children}</ModalProvider>
             </ThemeProvider>
           </div>
         </body>
