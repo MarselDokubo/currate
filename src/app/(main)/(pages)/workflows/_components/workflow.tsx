@@ -9,7 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Label } from "~/components/ui/label";
 import { Switch } from "~/components/ui/switch";
-import { toast } from "sonner";
+//import { toast } from "sonner";
 
 type Props = {
   name: string;
