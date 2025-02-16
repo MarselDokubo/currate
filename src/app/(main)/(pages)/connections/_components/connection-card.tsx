@@ -16,7 +16,7 @@ type Props = {
   title: ConnectionTypes;
   description: string;
   callback?: () => void;
-  connected: Record<string, boolean>;
+  connected?: Record<string, boolean>;
 };
 
 const ConnectionCard = ({
