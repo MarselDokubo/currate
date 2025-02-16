@@ -16,9 +16,16 @@ type Props = {
   title: ConnectionTypes;
   description: string;
   callback?: () => void;
+  connected: Record<string, boolean>;
 };
 
-const ConnectionCard = ({ description, icon, title }: Props) => {
+const ConnectionCard = ({
+  description,
+  type,
+  icon,
+  title,
+  connected,
+}: Props) => {
   return (
     <Card className="flex w-full items-center justify-between">
       <CardHeader className="flex flex-col gap-4">
@@ -37,7 +44,7 @@ const ConnectionCard = ({ description, icon, title }: Props) => {
         </div>
       </CardHeader>
       <div className="flex flex-col items-center gap-2 p-4">
-        {false ? (
+        {connected[type] ? (
           <div className="border-bg-primary rounded-lg border-2 px-3 py-2 font-bold text-white">
             Connected
           </div>
